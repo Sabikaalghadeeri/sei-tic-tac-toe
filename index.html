@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Tic Tac Toe Game</title>
     <link rel="stylesheet" href="style.css">
-    
 </head>
 <body>
     <div class="game">
         <div class="title"><span>Tic Tac Toe</span> ❌Game⭕</div>
+        
 
         <div class="square" id="num1" onclick="game(this.id)"></div>
         <div class="square" id="num2" onclick="game(this.id)"></div>
@@ -25,7 +25,9 @@
         <div class="square" id="num9" onclick="game(this.id)"></div>
 
     </div>
-
-<script defer src="script.js"></script>
+    <div id="Reset">
+        <button onclick="Reset()">Reset</button>
+    </div>
+    <script defer src="script.js"></script>
 </body>
 </html>
