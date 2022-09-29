@@ -9,13 +9,20 @@
     padding: 50px 0px 0px 0px 0px
 }
 
-#Reset {
+#button-container {
     position: absolute;
-    right:    0;
-    bottom:   0;
-    margin: 50px 700px 150px 200px;
-    background: aquamarine;
-    font-size: 20px;
+    bottom: 20%;
+    right: 47%;
+}
+
+#Reset {
+    /* position: absolute; */
+    /* right:    0; */
+    /* bottom:   0; */
+    /* margin: 50px 700px 150px 200px; */
+    background-color: bisque
+    border-color: rgba(137, 43, 226, 0.504);
+    font-size: 30px;
     text-align: center;
 }
 

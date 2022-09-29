@@ -8,6 +8,9 @@ function end(n1,n2,n3){
     document.getElementById('num'+n2)
     document.getElementById('num'+n3)
    console.log(`n1= ${n1}, n2= ${n2}, n3= ${n3}` )
+   setInterval(() => {
+      Reset()
+   }, 10000)
 
    }
 // check and declear for winner
@@ -44,21 +47,22 @@ function winner(){
       title.innerHTML = 'DRAW'
      }
 
-     // Reset Function
-     function Reset(){
-      document.getElementById(num1).innerHTML=''
-      document.getElementById(num2).innerHTML=''
-      document.getElementById(num3).innerHTML=''
-      document.getElementById(num4).innerHTML=''
-      document.getElementById(num5).innerHTML=''
-      document.getElementById(num6).innerHTML=''
-      document.getElementById(num7).innerHTML=''
-      document.getElementById(num8).innerHTML=''
-      document.getElementById(num9).innerHTML=''
-     }
+   }
+   // Reset Function
+   function Reset(){
+         document.getElementById('num1').innerHTML=''
+         document.getElementById('num2').innerHTML=''
+         document.getElementById('num3').innerHTML=''
+         document.getElementById('num4').innerHTML=''
+         document.getElementById('num5').innerHTML=''
+         document.getElementById('num6').innerHTML=''
+         document.getElementById('num7').innerHTML=''
+         document.getElementById('num8').innerHTML=''
+         document.getElementById('num9').innerHTML=''
+         squares = []
+      }
      
     
-}
 function game(id){
     let element = document.getElementById(id)
     if(turn === 'X' && element.innerHTML == ''){
